@@ -11,7 +11,3 @@ public class PersonPrinter {
                 + "; Age " + p.getAge() + "; Phone " + p.getPhone());
     }
 }
-
-
-// классе PersonPrinter реализовать 2 статических метода: printFI(Person p) - вывод имени и фамилии и printInfo(Person p)
-//    - вывод полной информации о человеке.
