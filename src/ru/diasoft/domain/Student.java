@@ -2,12 +2,18 @@ package ru.diasoft.domain;
 
 import ru.diasoft.Exception.InvalidPhoneNumberException;
 
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Set;
+import java.util.TreeSet;
+
 public class Student extends Person{
     private String group;
-    private short course;
+    private int course;
+    public Set<Subject> subjects= new TreeSet<>();
 
-    public Student(String firstName, String secondName, short age, String phone, String group, short course) throws InvalidPhoneNumberException {
-        super(firstName, secondName, age, group);
+    public Student(String firstName, String secondName, int age, String phone, String group, int course) throws InvalidPhoneNumberException {
+        super(firstName, secondName, age, phone);
 
         this.group = group;
         this.course = course;
@@ -25,7 +31,7 @@ public class Student extends Person{
         return group;
     }
 
-    public short getCourse() {
+    public int getCourse() {
         return course;
     }
 }

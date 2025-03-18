@@ -5,14 +5,14 @@ import ru.diasoft.Exception.InvalidPhoneNumberException;
 public class Person {
     private String firstName;
     private String secondName;
-    private short age;
+    private int age;
     private String phone;
 
     boolean checkPhone(String phone){
         return !phone.matches("\\+7\\d{10}") || phone.length() > 12;
     }
 
-    public Person(String firstName, String secondName, short age, String phone) throws InvalidPhoneNumberException {
+    public Person(String firstName, String secondName, int age, String phone) throws InvalidPhoneNumberException {
         this.firstName = firstName;
         this.secondName = secondName;
         this.age = age;
@@ -30,7 +30,7 @@ public class Person {
         return secondName;
     }
 
-    public short getAge() {
+    public int getAge() {
         return age;
     }
 
@@ -38,7 +38,7 @@ public class Person {
         return phone;
     }
 
-    public void setAge(short age) {
+    public void setAge(int age) {
         this.age = age;
     }
 
