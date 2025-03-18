@@ -1,10 +1,12 @@
 package ru.diasoft.domain;
 
+import ru.diasoft.Exception.InvalidPhoneNumberException;
+
 public class Student extends Person{
     private String group;
     private short course;
 
-    public Student(String firstName, String secondName, short age, String phone, String group, short course) {
+    public Student(String firstName, String secondName, short age, String phone, String group, short course) throws InvalidPhoneNumberException {
         super(firstName, secondName, age, group);
 
         this.group = group;
