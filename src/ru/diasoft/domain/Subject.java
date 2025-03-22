@@ -22,4 +22,8 @@ public class Subject implements Comparable<Subject>{
     public String toString() {
         return "         Subject: " + name + ", grade: " + grade;
     }
+
+    public int getGrade() {
+        return grade;
+    }
 }

@@ -31,4 +31,8 @@ public class Student extends Person{
     public int getCourse() {
         return course;
     }
+
+    public Set<Subject> getSubjects() {
+        return subjects;
+    }
 }
