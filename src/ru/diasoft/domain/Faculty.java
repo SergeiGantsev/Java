@@ -1,8 +1,17 @@
 package ru.diasoft.domain;
 
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.Getter;
+
 import java.util.ArrayList;
 import java.util.List;
 
+@Getter
+@Builder
+@Data
+@AllArgsConstructor
 public class Faculty{
     private String name;
     private List<Student> listStudents = new ArrayList<>();
@@ -13,17 +22,5 @@ public class Faculty{
 
     public void addStudent(Student student) {
         listStudents.add(student);
-    }
-
-    public List<Student> getListStudents() {
-        return listStudents;
-    }
-
-    public boolean equals(String name) {
-        return this.name.equals(name);
-    }
-
-    public String getName() {
-        return name;
     }
 }

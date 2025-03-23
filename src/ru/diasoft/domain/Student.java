@@ -1,9 +1,13 @@
 package ru.diasoft.domain;
 
+import lombok.*;
 import ru.diasoft.Exception.InvalidPhoneNumberException;
 
 import java.util.*;
 
+@EqualsAndHashCode(callSuper = true)
+@Getter
+@Setter
 public class Student extends Person{
     private String group;
     private int course;

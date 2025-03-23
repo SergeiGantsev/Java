@@ -1,16 +1,15 @@
 package ru.diasoft.domain;
 
+import lombok.Getter;
+
 public class Subject implements Comparable<Subject>{
+    @Getter
     private String name;
     private int grade;
 
     public Subject(String name, int grade){
         this.name = name;
         this.grade = grade;
-    }
-
-    public String getName() {
-        return name;
     }
 
     @Override
