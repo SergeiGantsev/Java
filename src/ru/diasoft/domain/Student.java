@@ -15,24 +15,4 @@ public class Student extends Person{
         this.group = group;
         this.course = course;
     }
-
-    public void setGroup(String group) {
-        this.group = group;
-    }
-
-    public void setCourse(short course) {
-        this.course = course;
-    }
-
-    public String getGroup() {
-        return group;
-    }
-
-    public int getCourse() {
-        return course;
-    }
-
-    public Set<Subject> getSubjects() {
-        return subjects;
-    }
 }
