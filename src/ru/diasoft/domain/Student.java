@@ -3,8 +3,7 @@ package ru.diasoft.domain;
 import lombok.*;
 import ru.diasoft.Exception.InvalidPhoneNumberException;
 
-import java.util.Set;
-import java.util.TreeSet;
+import java.util.*;
 
 @EqualsAndHashCode(callSuper = true)
 @Getter
